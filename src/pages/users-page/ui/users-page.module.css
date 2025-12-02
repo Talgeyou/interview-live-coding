@@ -1,0 +1,44 @@
+.users-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #374151;
+}
+
+.users-page__header {
+  margin-bottom: 2rem;
+}
+
+.users-page__title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to right, #111827, #4b5563);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.users-page__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.users-page__placeholder {
+  padding: 3rem;
+  text-align: center;
+  color: #6b7280;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px dashed #e5e7eb;
+}
+
+@media (min-width: 500px) {
+  .users-page__content {
+    grid-template-columns: 200px 1fr;
+  }
+}
