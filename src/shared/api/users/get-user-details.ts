@@ -18,7 +18,7 @@ export async function getUserDetails(
   const data = await response.json();
 
   // This is only for easier demonstration purpose
-  // Imitates inconsistent of time consumed by request
+  // Imitates inconsistency of time consumed by request
   // ---
   await new Promise((resolve, reject) => {
     const timeout = window.setTimeout(resolve, (id % 2) * 1000);

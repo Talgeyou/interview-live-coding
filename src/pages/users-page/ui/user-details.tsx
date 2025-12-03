@@ -20,9 +20,6 @@ export function UserDetails({ userId }: Props) {
         const data = await getUserDetails(userId);
         setData(data);
       } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') {
-          return;
-        }
         setError(
           err instanceof Error ? err.message : 'An unknown error occurred',
         );
